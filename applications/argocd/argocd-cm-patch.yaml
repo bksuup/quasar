@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+data:
+  # Enable ksops as a kustomize plugin
+  kustomize.buildOptions: "--enable-alpha-plugins --enable-exec"

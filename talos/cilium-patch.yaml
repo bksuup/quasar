@@ -1,6 +1,8 @@
+# prerequisite for cilium install
 cluster:
   network:
     cni:
       name: none
   proxy:
     disabled: true
+

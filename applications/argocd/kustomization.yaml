@@ -4,13 +4,3 @@ kind: Kustomization
 namespace: argocd
 resources:
   - https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
-
-patches:
-  - path: argocd-repo-server-patch.yaml
-    target:
-      kind: Deployment
-      name: argocd-repo-server
-  - path: argocd-cm-patch.yaml
-    target:
-      kind: ConfigMap
-      name: argocd-cm

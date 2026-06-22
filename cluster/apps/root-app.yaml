@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://gitlab.com/bk-homelab/quasar.git
     targetRevision: main
-    path: cluster/apps
+    path: applications
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd

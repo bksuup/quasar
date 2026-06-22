@@ -7,8 +7,10 @@ spec:
   project: default
   source:
     repoURL: https://gitlab.com/bk-homelab/quasar.git
-    targetRevision: main
-    path: applications
+    chart: argo-cd
+    targetRevision: "9.7.0"
+    helm:
+      valueFiles: values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd

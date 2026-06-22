@@ -12,7 +12,7 @@ spec:
     helm:
       releaseName: traefik
       valueFiles:
-        - ../../applications/traefik/values.yaml
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd

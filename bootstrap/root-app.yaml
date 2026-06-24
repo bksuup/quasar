@@ -1,24 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd
+  name: root
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://argoproj.github.io/argo-helm
-    chart: argo-cd
-    targetRevision: '9.7.0'
-    helm:
-      valueFiles:
-        - values.yaml
+    repoURL: https://gitlab.com/bk-homelab/quasar.git
+    targetRevision: main
+    path: cluster/apps
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
   syncPolicy:
     automated:
-      prune: false
       selfHeal: true
+      prune: true
     syncOptions:
       - CreateNamespace=true
-      - ServerSideApply=true

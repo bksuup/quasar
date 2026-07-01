@@ -26,7 +26,7 @@ api:
 ingressRoute:
   dashboard:
     enabled: true
-    matchRule: Host(`dashboard.docker.localhost`)
+    matchRule: Host(`traefik.bkristian.net`)
     entryPoints:
       - websecure
     middlewares:

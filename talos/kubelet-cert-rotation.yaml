@@ -1,0 +1,5 @@
+# pre-requisite for metrics-server
+machine:
+  kubelet:
+    extraArgs:
+      rotate-server-certificates: true

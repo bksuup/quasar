@@ -9,5 +9,7 @@ resources:
 configMapGenerator:
   - name: envoy-values
     namespace: envoy-gateway-system
+    options:
+      disableNameSuffixHash: true
     files:
       - values.yaml

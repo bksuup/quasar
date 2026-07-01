@@ -8,5 +8,7 @@ resources:
 configMapGenerator:
   - name: traefik-values
     namespace: traefik
+    options:
+      disableNameSuffixHash: true
     files:
       - values.yaml

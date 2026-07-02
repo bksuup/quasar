@@ -8,7 +8,7 @@ spec:
   interval: 5m
   releaseName: cert-manager
   chartRef:
-    kind: HelmRepository
+    kind: HelmChart
     name: cert-manager
   upgrade:
     strategy:

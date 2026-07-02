@@ -1,0 +1,3 @@
+# values.yaml
+crds:
+  enabled: true

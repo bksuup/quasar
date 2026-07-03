@@ -14,7 +14,3 @@ spec:
     strategy:
       name: RetryOnFailure
       retryInterval: 5m
-  valuesFrom:
-    - kind: ConfigMap
-      name: envoy-values
-      valuesKey: values.yaml

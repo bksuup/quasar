@@ -5,16 +5,19 @@ metadata:
   name: cert-manager
   namespace: cert-manager
 spec:
-  interval: 5m
-  releaseName: cert-manager
-  chartRef:
-    kind: HelmChart
-    name: cert-manager
+  interval: 12h
+  install:
+    strategy:
+      name: RetryOnFailure
   upgrade:
     strategy:
       name: RetryOnFailure
-      retryInterval: 5m
-  valuesFrom:
-    - kind: ConfigMap
-      name: cert-manager-values
-      valuesKey: values.yaml
+  chartRef:
+    kind: OCIRepository
+    name: cert-manager
+  values:
+    crds:
+      enabled: true
+      keep: false
+    config:
+      enableGatewayAPI: true

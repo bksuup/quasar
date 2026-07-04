@@ -4,7 +4,8 @@ type: Opaque
 metadata:
     name: testsecret
     namespace: default
-data: ENC[AES256_GCM,data:eSM4xckE3rc=,iv:BViP2YYUFn/3Ymb0SJkldmnsLHP5Sj5jLT0CFLg9+Rk=,tag:cghAb87IN2vLAbuM1ok2bg==,type:str]
+data:
+    testkey: ENC[AES256_GCM,data:1nRuG6WwsYI=,iv:DZQ8EI1wNzZgzDtwoIankgtoNrzhImzE2kKKYmoimiE=,tag:sNIudrT9V9OVU/YL6XJwFA==,type:str]
 sops:
     age:
         - enc: |
@@ -17,6 +18,6 @@ sops:
             -----END AGE ENCRYPTED FILE-----
           recipient: age1gkxdegjfkl3krek9nrcc5hdxdaxa8x9jdxhrtujq7lp2f8uqus4q72tc2w
     encrypted_regex: ^(data|stringData)$
-    lastmodified: "2026-07-04T12:25:44Z"
-    mac: ENC[AES256_GCM,data:8BrCXPkwrFa+ys2pXUH5hbwTIdxYIpUhh4tSZNlJ5EFFKW8B5THab+kclXAyMzDba1gk9gZQqyYabJQTpFISeKsJqnC8RtUX7NRq1ErAuUZ7SWsclRtUdVCjCzwCaBm8c1uiv/BiHrrU3ZUliIZ6lvn4jFlpJjo2HkarIX55Qx8=,iv:AdJU9oVLNvRTC5jp2EjYYFy/d717kTwRRI+nqxmkYDI=,tag:935vt16ir53uwuaPGKnRlA==,type:str]
+    lastmodified: "2026-07-04T12:28:45Z"
+    mac: ENC[AES256_GCM,data:I9gSn6/06hPF+jcoZ6tiKwuWd8Jy2bwkH0vMi1PTHTIrHt85JrzITbJGqdNZxn4nZm0lZhnByfHAm4LatVKekvhBrg2Ba7Olztotvr9nG2pjpS/6VeBWoyRFlI1J5oJxL+T5z3NVG8hdoxlBxOhm6okTSYkmU4ScgdgZDjzAsos=,iv:iolN9TXr55aLqzPwJ1/zX67akIJ3nI4SDO5oNCsz2B0=,tag:tWfST8mHacAzfeB3GM+jNw==,type:str]
     version: 3.13.2

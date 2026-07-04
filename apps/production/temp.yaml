@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Secret
+type: Opaque
+metadata:
+    name: testsecret
+    namespace: default
+data: ENC[AES256_GCM,data:eSM4xckE3rc=,iv:BViP2YYUFn/3Ymb0SJkldmnsLHP5Sj5jLT0CFLg9+Rk=,tag:cghAb87IN2vLAbuM1ok2bg==,type:str]
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBOOStkRmRkaWhIankzekM0
+            L3hQSlZxSXl5bks5WUVyYlFZSEpDcUxvZlRVCkViNG14VUVhcDZodVg2MTRvU2tH
+            WUx5SVpNdlJlZGFJMnNjY05KaTdyeFkKLS0tIDE3ZUFlYU1lWUtCMGV0WFUzS0t5
+            TG9leFpxY2lwaVlNNGZobGJkcFVHZ2sKh6FWTaKaAX61gfoZFSRHpPFtZPubEhsT
+            Z5W7PBW32Ng998UpXRHGBnLOM32ln3TDIecK6FaSJ5Mh3UzXmp17NQ==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1gkxdegjfkl3krek9nrcc5hdxdaxa8x9jdxhrtujq7lp2f8uqus4q72tc2w
+    encrypted_regex: ^(data|stringData)$
+    lastmodified: "2026-07-04T12:25:44Z"
+    mac: ENC[AES256_GCM,data:8BrCXPkwrFa+ys2pXUH5hbwTIdxYIpUhh4tSZNlJ5EFFKW8B5THab+kclXAyMzDba1gk9gZQqyYabJQTpFISeKsJqnC8RtUX7NRq1ErAuUZ7SWsclRtUdVCjCzwCaBm8c1uiv/BiHrrU3ZUliIZ6lvn4jFlpJjo2HkarIX55Qx8=,iv:AdJU9oVLNvRTC5jp2EjYYFy/d717kTwRRI+nqxmkYDI=,tag:935vt16ir53uwuaPGKnRlA==,type:str]
+    version: 3.13.2

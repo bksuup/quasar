@@ -14,6 +14,10 @@ spec:
   path: ./controllers
   prune: true
   wait: true
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-age
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
@@ -31,6 +35,10 @@ spec:
     name: infrastructure
   path: ./configs
   prune: true
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-age
   # patches:
   #   - patch: |
   #       - op: replace

@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - name: infra-configs
+    - name: infra-prod
   interval: 1h
   retryInterval: 2m
   timeout: 5m
